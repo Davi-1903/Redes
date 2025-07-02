@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.subcabecalho {
+    /* background-image: url(../passeios/imagens/pais\(peru\).jpg); */
+    background: linear-gradient(90deg, rgba(54,53,53,0.8),rgba(180,180,180,0.1)), url('../media/images/passeios/pais\(peru\).jpg');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/montserrat');*/
+
+.subcabecalho > h1 {
+    margin-bottom: 60px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #6B6B6B;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: justify;
+}
+article {
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-items: center;
+}
+.passeio {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.passeio:last-of-type{
+    margin-bottom: 0px;
+}
+.passeio > h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: #062A34;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: baseline;
+}
+.passeio > img {
+    width: 91%;
+    margin-bottom: 10px;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+.categorias{
+    padding: 40px 20px;
+    background-color: #2b586565;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border-radius: 10px;
+    width: 100%;
+    flex-basis: 300px;
+}
+.categorias > h2 {
+    color: #be5d1c;
+    margin-bottom: 20px;
+}
+.categorias > p{
+    padding: 10px 0;
+    border-bottom: 1px solid #18333a;
+    color: #062A34;
+    font-weight: bold;
+}
+.categorias > p:hover{
+    color: #be5d1c;
+}
+.posts{
+    flex-basis: 300px;
+    width: 100%;
+    margin-top: 50px;
+}
+.posts > div{
+    min-width: 300px;
+    height: 60px;
+    display: flex;
+    margin-top: 20px;
+}
+.posts > div > img {
+    height: 100%;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.posts > div > p{
+    text-align: start;
+    margin-left: 10px;
+    padding-top: 5px;
+    color: #062A34;
+    font-weight: bold;
+}
+.posts h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 22px;
+    border-bottom: 1px solid #777979;
+    padding-bottom: 8px;
+    color: #123038;
+    
+}
+@media screen and (max-width: 728px){
+    article{
+        justify-content: center;
+        gap: 30px;
+    }
+    .conteudo{
+        width: 100%;
+    }
+    .categorias, .posts{
+        width: 95%;
+        margin-left: 15px
+    }
+    .subcabecalho > h1 {
+        font-size: 30px;
+        margin-bottom: 70px;
+    }
+}

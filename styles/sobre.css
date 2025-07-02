@@ -1,0 +1,118 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+
+
+#imagem{
+    height: 360px;
+    background: linear-gradient(90deg, rgba(54,53,53,0.8),rgba(180,180,180,0.1)), url('../media/images/sobre/agencia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+#imagem > h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+}
+#imagem > p{
+    color: white;
+}
+.butons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+button {
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: 0;
+    margin-right: 15px;
+    color: #072D3A;
+    margin-bottom: 20px;
+}
+button:focus, button:hover{
+    background-color: #072D3A;
+    color: white;
+}
+
+
+#textsobre {
+    margin: 0 10% 60px 10%;
+}
+#textsobre > p{
+    margin-bottom: 10px;
+    text-align: justify;
+    /* word-break: break-all; */
+}
+#textsobre > h1{
+    text-align: center;
+    margin-bottom: 60px;
+    color: #072D3A;
+    font-size: 36px;
+    margin-top: 30px;
+}
+#textsobre > img {
+    width: min(550px, 97%);
+    float: right;
+    border-radius: 6px;
+    margin-left: 15px;
+    margin-bottom: 4px;
+    
+    
+}
+@media screen and (max-width: 1190px){
+    #textsobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #textsobre > img {
+        float: none;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    #imagem {
+        padding: 20px;
+    }
+    #imagem > h1 {
+        font-size: 30px;
+    }
+    #textsobre{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #textsobre > h1{
+        font-size: 28px;
+    }
+    #textsobre > img{
+        margin-right: 7px;
+    }
+    
+    main{
+        gap: 0;        
+    }
+    button {
+        padding: 10px 20px;
+        
+    }
+}

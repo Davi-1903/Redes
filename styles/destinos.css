@@ -1,0 +1,76 @@
+:root {
+    --cor1: #49808C;
+    --cor2: #94F2E1;
+    --cor3: #81A649;
+    --cor4: #F2E1C2;
+    --cor5: #F27830;
+    --cor6: #05202c;
+    --shadow: #30304080;
+    --font: 'Montserrat', sans-serif;
+}
+
+.destinos {
+    padding: 3rem 7rem;
+}
+
+.destinos > h2 {
+    font: bold 3.6rem var(--font);
+    color: var(--cor1);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.destinos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.destinos-container .card {
+    position: relative;
+    width: 20rem;
+}
+
+.destinos-container .card img {
+    width: 100%;
+    border-radius: 1rem;
+    transition: all 250ms ease-in-out;
+    filter: brightness(0.6);
+}
+
+.destinos-container .card .text {
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem;
+    transition: all 250ms ease-in-out;
+}
+
+.destinos-container .card .text h3 {
+    font: bold 1.6rem var(--font);
+    color: white;
+    margin-bottom: .5rem;
+}
+
+.destinos-container .card .text p {
+    font: normal 1rem / 1.5 var(--font);
+    color: white;
+}
+
+@media screen and (width < 700px) {
+    .destinos {
+        padding-inline: 3rem;
+    }
+
+    .destinos > h2 {
+        font-size: 2.4rem;
+    }
+
+    .destinos-container > .card {
+        min-width: 16rem;
+    }
+
+    .destinos-container > .card .text {
+        font-size: 16px;
+    }
+}

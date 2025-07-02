@@ -1,0 +1,142 @@
+:root {
+    --cor1: #49808C;
+    --cor2: #94F2E1;
+    --cor3: #81A649;
+    --cor4: #F2E1C2;
+    --cor5: #F27830;
+    --cor6: #05202c;
+    --shadow: #30304080;
+    --font: 'Montserrat', sans-serif;
+}
+
+.carousel {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.carousel-container {
+    height: 100%;
+    display: flex;
+    transition: all 1s ease-in-out;
+}
+
+.carousel > button {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font: bold 3rem var(--font);
+    background-color: transparent;
+    color: #ffffff80;
+    padding: .5rem;
+}
+
+.carousel > #previous {
+    left: 1rem;
+}
+
+.carousel > #next {
+    right: 1rem;
+}
+
+.carousel-container > .card {
+    flex: 1 0 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-container > .card > .text {
+    margin-left: 10%;
+    padding-inline: 1rem;
+    height: 30rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-container > .card h2 {
+    font: bold 4.6rem var(--font);
+    color: white;
+}
+
+.carousel-container > .card p {
+    font: normal 1.2rem var(--font);
+    color: white;
+}
+
+.carousel-container > .card button {
+    margin-top: 2rem;
+    align-self: start;
+    padding: .5rem 4rem;
+    font: bold 1.8rem var(--font);
+    color: white;
+    border-radius: 2rem;
+    border: 2px solid white;
+    background-color: transparent;
+    transition: all 250ms;
+}
+
+.carousel-container > .card button:hover {
+    background-color: var(--cor5);
+    border-color: var(--cor5);
+    transform: scale(1.05);
+}
+
+.carousel-container > .card button:active {
+    transform: none;
+}
+
+/* Vou pensar numa forma melhor */
+.carousel-container > .card:nth-child(1) {
+    background-image: linear-gradient(to right, #000000d0, transparent), url('../media/images/carousel/Brasil.jpg');
+}
+
+.carousel-container > .card:nth-child(2) {
+    background-image: linear-gradient(to right, #000000d0, transparent), url('../media/images/carousel/Egito.jpg');
+}
+
+.carousel-container > .card:nth-child(3) {
+    background-image: linear-gradient(to right, #000000d0, transparent), url('../media/images/carousel/Suíça.jpg');
+}
+
+.carousel-container > .card:nth-child(4) {
+    background-image: linear-gradient(to right, #000000d0, transparent), url('../media/images/carousel/Austrália.jpg');
+}
+
+.carousel-container > .card:nth-child(5) {
+    background-image: linear-gradient(to right, #000000d0, transparent), url('../media/images/carousel/Coreia.jpg');
+}
+
+@media screen and (width < 700px) {
+    .carousel > #previous {
+        font-size: 1.5rem;
+        left: .5rem;
+    }
+    
+    .carousel > #next {
+        font-size: 1.5rem;
+        right: .5rem;
+    }
+
+    .carousel-container > .card > .text {
+        width: 80%;
+        height: 20rem;
+    }
+
+    .carousel-container > .card h2 {
+        font-size: 3.2rem;
+    }
+
+    .carousel-container > .card p {
+        font-size: 1rem;
+    }
+
+    .carousel-container > .card button {
+        margin-top: 1rem;
+        padding: .5rem 3rem;
+        font-size: 1.6rem;
+    }
+}

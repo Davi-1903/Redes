@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor1: #49808C;
+    --cor2: #94F2E1;
+    --cor3: #81A649;
+    --cor4: #F2E1C2;
+    --cor5: #F27830;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+h1 {
+    color: #121f22;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: var(--cor5);
+    font-size: 1.8em;
+}
+
+.conteudo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    width: 50%;
+}
+
+input, select, textarea {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.contatos {
+    background-color: #F2E1C2;
+    border-radius: 30px 0px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.288);
+    padding: 30px 20px;
+    flex: 1;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+}
+
+#endereco::before {
+    content: '';
+    background-image: url(../media/icons/location_on_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png);
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+#horario::before {
+    content: '';
+    background-image: url(../media/icons/schedule_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png);
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+#contato::before {
+    content: '';
+    background-image: url(../media/icons/call_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png);
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+#email::before {
+    content: '';
+    background-image: url(../media/icons/mail_24dp_000000_FILL0_wght400_GRAD0_opsz24.png);
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.row {
+    height: 2px;
+    width: 100%;
+    margin: auto;
+    background-color: #ffffff5b;
+}
+
+[type="button"] {
+    background-color: #49808C;
+    border: 0;
+    padding: 10px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.769);
+    border-radius: 10px;
+}
+
+[type="button"]:hover {
+    background-color: #f58e52;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 30px 0 0 0;
+    }
+
+    main > h1 {
+        text-align: center;
+    }
+
+    main > p:first-of-type {
+        text-align: center;
+    }
+
+    .conteudo {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contatos {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: 0;
+    }
+    
+    form {
+        width: 100%;
+    }
+}

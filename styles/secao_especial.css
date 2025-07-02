@@ -1,0 +1,98 @@
+:root {
+    --cor1: #49808C;
+    --cor2: #94F2E1;
+    --cor3: #81A649;
+    --cor4: #F2E1C2;
+    --cor5: #F27830;
+    --cor6: #05202c;
+    --shadow: #30304080;
+    --font: 'Montserrat', sans-serif;
+}
+
+.secao-especial {
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    background: linear-gradient(to right, #000000, #00000080), url('../media/images/seções especiais/Background.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+.secao-especial:nth-child(6n - 1) {
+    background: linear-gradient(to right, #000000, #00000080), url('../media/images/seções especiais/Background 2.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+.secao-especial:nth-child(6n + 1) {
+    background: linear-gradient(to right, #000000, #00000080), url('../media/images/seções especiais/Background 3.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+.secao-especial .text {
+    flex: 2 0 24rem;
+    font-size: 16px;
+}
+
+.secao-especial .button-container {
+    flex: 1 0 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secao-especial .text > h2 {
+    font: bold 3em var(--font);
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.secao-especial .text > p {
+    font: normal 1.2em/1.5 var(--font);
+    color: white
+}
+
+.secao-especial .button-container button {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font: bold 1.6rem var(--font);
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 2rem;
+    transition: all 250ms;
+}
+
+.secao-especial .button-container button:hover {
+    background-color: var(--cor5);
+    border-color: var(--cor5);
+    transform: scale(1.05);
+}
+
+.secao-especial .button-container button:active {
+    transform: none;
+}
+
+@media screen and (width < 850px) {
+    .secao-especial {
+        padding: 2rem;
+    }
+
+    .secao-especial:nth-child(n) { /* Pequena gambiarra */
+        background-attachment: scroll;
+        flex-flow: column nowrap;
+        gap: 0;
+    }
+
+    .secao-especial .text {
+        flex-basis: 0;
+        font-size: 12px;
+    }
+
+    .secao-especial .text > p {
+        text-align: justify;
+    }
+
+    .secao-especial .button-container button {
+        font-size: 1.2rem;
+    }
+}

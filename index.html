@@ -1,11 +1,407 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>GoWay</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/destinos.css">
+    <link rel="stylesheet" href="styles/secao_especial.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="shortcut icon" href="../media/icons/Icon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <h1>Documento para teste</h1>
+
+    <div class="container">
+        <header>
+            <a href="#">
+                <img src="media/svg/Logo.svg" alt="Logo" id="logo">
+            </a>
+            <nav>
+                <div class="btn-menu-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="32" height="32" stroke-width="2" id="btn-menu-close">
+                        <path d="M18 6l-12 12"></path>
+                        <path d="M6 6l12 12"></path>
+                    </svg>
+                </div>
+                <ul class="menu">
+                    <li><a href="#" class="marcado">Inicio</a></li>
+                    <li><a href="pages/sobre.html">Sobre</a></li>
+                    <li><a href="pages/contato.html">Contatos</a></li>
+                    <li><a href="pages/viagens.html">Viagens</a></li>
+                    <li><a href="pages/experiencias.html">Experiências</a></li>
+                    <li><a href="pages/login.html">Login</a></li>
+                </ul>
+            </nav>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="32" height="32" stroke-width="2" id="btn-menu-open">
+                <path d="M4 6l16 0"></path>
+                <path d="M4 12l16 0"></path>
+                <path d="M4 18l16 0"></path>
+            </svg>
+        </header>
+        <main>
+            <section class="carousel">
+                <button id="previous">&lang;</button>
+                <button id="next">&rang;</button>
+                <div class="carousel-container">
+                    <article class="card">
+                        <div class="text">
+                            <h2>Brasil</h2>
+                            <p>Por que não uma praia?</p>
+                            <a href="pages/brasil.html">
+                                <button>Go!</button>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="text">
+                            <h2>Egito</h2>
+                            <p>Já viu as pirâmides de perto?</p>
+                            <a href="#">
+                                <button>Go!</button>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="text">
+                            <h2>Suíça</h2>
+                            <p>Existe lugar mais lindo?</p>
+                            <a href="#">
+                                <button>Go!</button>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="text">
+                            <h2>Austrália</h2>
+                            <p>Que tal um passeio com os cangurus?</p>
+                            <a href="#">
+                                <button>Go!</button>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="text">
+                            <h2>Coreia do Sul</h2>
+                            <p>Gosta de dorama?</p>
+                            <a href="#">
+                                <button>Go!</button>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="destinos">
+                <h2>Destinos Internacionais</h2>
+                <article class="destinos-container">
+                    <a href="pages/melhores_passeios.html">
+                        <div class="card">
+                            <img src="media/images/destinos/internacionais/Peru.jpg" alt="Peru">
+                            <div class="text">
+                                <h3>Peru</h3>
+                                <p>Matju pithcu, nem sei como escreve...</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/internacionais/Barramas.jpg" alt="Barramas">
+                            <div class="text">
+                                <h3>Barramas</h3>
+                                <p>Lugar bonito da desgraça!!!!!!!</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/internacionais/Senegal.jpg" alt="Senegal">
+                            <div class="text">
+                                <h3>Senegal</h3>
+                                <p>Nem sei onde é isso aqui</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/internacionais/Sydney.jpg" alt="Sydney">
+                            <div class="text">
+                                <h3>Sydney</h3>
+                                <p>O canto que Nemo se perdeu</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/internacionais/Scranton.jpg" alt="Scranton">
+                            <div class="text">
+                                <h3>Scranton</h3>
+                                <p>Pa-nana, Pa-nana...</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/internacionais/Toronto.jpg" alt="Toronto">
+                            <div class="text">
+                                <h3>Toronto</h3>
+                                <p>É onde mora o deadpool, né?</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </section>
+            <section class="secao-especial">
+                <div class="text">
+                    <h2>Melhor blog de turismo</h2>
+                    <p>Explore novos destinos, descubra culturas fascinantes e encontre dicas imperdíveis para sua próxima viagem! No nosso blog de turismo, compartilhamos roteiros, curiosidades e experiências para inspirar você a desbravar o mundo. Embarque nessa jornada com a gente!</p>
+                </div>
+                <div class="button-container">
+                    <a href="pages/sobre.html"><button>Saiba mais!</button></a>
+                </div>
+            </section>
+            <section class="destinos">
+                <h2>Destinos Nacionais</h2>
+                <article class="destinos-container">
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/nacionais/Gramado.jpg" alt="Gramado">
+                            <div class="text">
+                                <h3>Gramado</h3>
+                                <p>Europa? Países baixos? Não, Gramado!</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/nacionais/Belém do pará.jpg" alt="Belém do pará">
+                            <div class="text">
+                                <h3>Belém do pará</h3>
+                                <p>Eu vou tomar um Tacacá</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/nacionais/Sorocaba.jpg" alt="Sorocaba">
+                            <div class="text">
+                                <h3>Sorocaba</h3>
+                                <p>MELHOR LUGAR DO MUNDO!</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/nacionais/Rio de Janeiro.jpg" alt="Rio de Janeiro">
+                            <div class="text">
+                                <h3>Rio de Janeiro</h3>
+                                <p>A beleza é grande, o perigo também</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/nacionais/Balneário Camboriú.jpg" alt="Balneário Camboriú">
+                            <div class="text">
+                                <h3>Balneário Camboriú</h3>
+                                <p>Nós vai descer... Vai descer...</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/nacionais/Manaus.jpg" alt="Manaus">
+                            <div class="text">
+                                <h3>Manaus</h3>
+                                <p>O blue passou por aqui</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </section>
+            <section class="secao-especial">
+                <div class="text">
+                    <h2>Construa suas experiências</h2>
+                    <p>Mais do que visitar destinos, viajar é sobre viver experiências inesquecíveis! No nosso blog de turismo, te ajudamos a criar momentos únicos, seja explorando lugares exóticos, conhecendo novas culturas ou se aventurando em roteiros autênticos. Transforme cada viagem em uma história para contar!</p>
+                </div>
+                <div class="button-container">
+                    <a href="pages/experiencias.html"><button>Saiba mais!</button></a>
+                </div>
+            </section>
+            <section class="destinos">
+                <h2>Destinos Nordestinos</h2>
+                <article class="destinos-container">
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/nordestinos/Maragogi.jpg" alt="Maragogi">
+                            <div class="text">
+                                <h3>Maragogi</h3>
+                                <p>Deveras bonitu!</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/nordestinos/São Miguel do Gostoso.jpg" alt="São Miguel do Gostoso">
+                            <div class="text">
+                                <h3>São Miguel do gostoso</h3>
+                                <p>Deveras bonitu também!</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/nordestinos/Recife.jpg" alt="Recife">
+                            <div class="text">
+                                <h3>Recife</h3>
+                                <p>Bem pertin daqui ó</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/nordestinos/Fernando de Noronha.jpg" alt="Fernando de Noronha">
+                            <div class="text">
+                                <h3>Fernando de Noronha</h3>
+                                <p>Eis o verdadeiro significado de "Lugar paradisíaco"</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/nordestinos/Natal.jpg" alt="Natal">
+                            <div class="text">
+                                <h3>Natal</h3>
+                                <p>Já fui muito. ai ai...</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <img src="media/images/destinos/nordestinos/Pipa.jpg" alt="Pipa">
+                            <div class="text">
+                                <h3>Pipa</h3>
+                                <p>Num vi uma pipa lá</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </section>
+            <section class="secao-especial">
+                <div class="text">
+                    <h2>Fale conosco!</h2>
+                    <p>Tem alguma dúvida, sugestão ou quer compartilhar sua experiência de viagem com a gente? Entre em contato! Estamos prontos para te ajudar e trocar ideias sobre destinos incríveis. Fale conosco pelo e-mail, redes sociais ou formulário do site. Vamos juntos explorar o mundo!</p>
+                </div>
+                <div class="button-container">
+                    <a href="pages/contato.html"><button>Saiba mais!</button></a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="logo-container">
+                <a href="#">
+                    <img src="media/svg/Logo footer.svg" alt="Logo">
+                </a>
+                <p>No nosso blog de turismo, compartilhamos roteiros, curiosidades e experiências para inspirar você a desbravar o mundo.</p>
+            </div>
+            <div class="follow-containter">
+                <h2>Acompanhe</h2>
+                <div class="icons">
+                    <a href="https://github.com/davi-1903/GoWay" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="1.5">
+                            <path
+                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/infoweb.2023.1" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="1.5">
+                            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z">
+                            </path>
+                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                            <path d="M16.5 7.5l0 .01"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@infoweb2023.2?is_from_webapp=1&sender_device=pc" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" width="48" height="48" stroke-width="1.5">
+                            <path
+                                d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="trips-container">
+                <ul>
+                    <li>America do Sul</li>
+                    <li><a href="pages/brasil.html">Brasil</a></li>
+                    <li><a href="#">Argentina</a></li>
+                    <li><a href="#">Chile</a></li>
+                    <li><a href="#">Colômbia</a></li>
+                    <li><a href="#">Equador</a></li>
+                    <li><a href="#">Paraguai</a></li>
+                    <li><a href="#">Peru</a></li>
+                </ul>
+                <ul>
+                    <li>America do Norte</li>
+                    <li><a href="#">Canadá</a></li>
+                    <li><a href="#">Estados Unidos</a></li>
+                    <li><a href="#">México</a></li>
+                </ul>
+                <ul>
+                    <li>Europa</li>
+                    <li><a href="#">Alemanha</a></li>
+                    <li><a href="#">Suíça</a></li>
+                    <li><a href="#">Vaticano</a></li>
+                    <li><a href="#">Inglaterra</a></li>
+                    <li><a href="#">Portugal</a></li>
+                    <li><a href="#">Mônaco</a></li>
+                    <li><a href="#">Itália</a></li>
+                </ul>
+                <ul>
+                    <li>África</li>
+                    <li><a href="#">África do Sul</a></li>
+                    <li><a href="#">Angola</a></li>
+                    <li><a href="#">Egito</a></li>
+                    <li><a href="#">Gana</a></li>
+                    <li><a href="#">Camarões</a></li>
+                    <li><a href="#">Benin</a></li>
+                    <li><a href="#">Guiné</a></li>
+                </ul>
+                <ul>
+                    <li>Ásia</li>
+                    <li><a href="#">Arábia Saudita</a></li>
+                    <li><a href="#">Catar</a></li>
+                    <li><a href="#">China</a></li>
+                    <li><a href="#">Coreia do Sul</a></li>
+                    <li><a href="#">Japão</a></li>
+                    <li><a href="#">Rússia</a></li>
+                    <li><a href="#">Maldivas</a></li>
+                </ul>
+                <ul>
+                    <li>Oceania</li>
+                    <li><a href="#">Austrália</a></li>
+                    <li><a href="#">Ilhas Salomão</a></li>
+                    <li><a href="#">Kiribati</a></li>
+                    <li><a href="#">Nauru</a></li>
+                    <li><a href="#">Samoa</a></li>
+                    <li><a href="#">Papua-Nova Guiné</a></li>
+                    <li><a href="#">Tuvalu</a></li>
+                </ul>
+            </div>
+            <div class="info-container">
+                <p>Copyright ©2025 GoWay. Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,168 @@
+:root {
+    --cor1: #49808C;
+    --cor2: #94F2E1;
+    --cor3: #81A649;
+    --cor4: #F2E1C2;
+    --cor5: #F27830;
+    --cor6: #05202c;
+    --shadow: #30304080;
+    --font: 'Montserrat', sans-serif;
+}
+
+main {
+    height: calc(100vh - 100px);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: url('../media/images/seções especiais/Background.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+main article {
+    grid-column-start: 2;
+    display: grid;
+    place-items: center;
+    background-color: #ffffff20;
+    backdrop-filter: blur(.5rem);
+}
+
+main form {
+    width: clamp(18rem, 80%, 24rem);
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: white;
+    box-shadow: .5rem .25rem 1rem var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 16px;
+}
+
+main form > h2 {
+    font: bold 3em var(--font);
+    color: var(--cor6);
+}
+
+main form .input-label {
+    position: relative;
+}
+
+main form .input-label > input {
+    outline: none;
+    width: 100%;
+    background-color: #dde;
+    border-radius: .5rem;
+    font: 500 1em var(--font);
+    padding: 1rem 15% 1rem 1rem;
+    color: var(--cor6);
+}
+
+main form .input-label > input + label {
+    cursor: text;
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    font: 500 1.2em var(--font);
+    transition: all 250ms;
+    color: var(--cor6);
+}
+
+main form .input-label > input:is(:focus, :not(:placeholder-shown)) + label {
+    font-size: 1em;
+    left: 0;
+    transform: translateY(-225%);
+}
+
+main form .input-label > input:not(:placeholder-shown) + label::after {
+    content: ':';
+}
+
+main form .input-label .icon-container {
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    right: 1.5%;
+    height: 80%;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    border-radius: calc(.5rem - 10%);
+    transition: all 250ms;
+}
+
+main form .input-label .icon-container:hover {
+    background-color: #bbc;
+    #password-btn::before {
+        border-color: #bbc;
+    }
+}
+
+main form .input-label .icon-container svg {
+    width: 100%;
+}
+
+main form .input-label > a {
+    position: absolute;
+    right: 0;
+    bottom: -1.6rem;
+    font: 500 .9em var(--font);
+    color: var(--cor1);
+}
+
+main form .input-label > a:hover {
+    text-decoration: none;
+}
+
+main form button[type="submit"] {
+    margin-top: 1rem;
+    aspect-ratio: 20 / 3;
+    border-radius: .5rem;
+    background-color: var(--cor6);
+    font: 500 1.2em var(--font);
+    color: white;
+    transition: all 250ms;
+}
+
+main form button[type="submit"]:hover {
+    transform: scale(1.05);
+    background-color: var(--cor5);
+}
+
+main form button[type="submit"]:active {
+    transform: none;
+    transition: none;
+}
+
+@media screen and (width < 1200px) {
+    main {
+        background-attachment: scroll;
+    }
+
+    main article {
+        grid-column: 1 / 3;
+    }
+}
+
+@media screen and (width < 450px) {
+    main form {
+        padding: 1.5rem;
+        font-size: 14px;
+    }
+
+    main form .input-label > input {
+        padding-inline-end: 20%;
+    }
+
+    main form .input-label > input:is(:focus, :not(:placeholder-shown)) + label {
+        transform: translateY(-265%);
+    }
+
+    main form .input-label .icon-container {
+        width: 16%;
+        right: 2%;
+    }
+
+    main form button[type="submit"] {
+        aspect-ratio: 20 / 4;
+    }
+}
